@@ -8,53 +8,47 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Philipp L. Harnisch</title>
+    <title>Projects</title>
   </head>
   <body>
     <div class="container">
-        <h1>Philipp L. Harnisch</h1>
 
-        <p>Software</p>
+        <p>Projects</p>
         <ul class="list-group list-group-flush">
             <a class="list-group-item" href="https://www.curseforge.com/wow/addons/showmystats">Show My Stats <span class="label label-default">WoW Addon</span></a>
             <a class="list-group-item" href="https://vegan-sandw.itch.io/hexagonal-havoc">Hexagonal Havoc <span class="label label-default">Godot Game</span></a>
-        </ul>
-
-        <p>Music</p>
-
-        <ul class="list-group list-group-flush">
-            <div class="list-group-item">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                    Réve Fleuris de Si'ra <span class="label label-default">Piano</span>
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Réve Fleuris de Si'ra</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <midi-player
-                          src="https://pharnisch.github.io/assets/midi/reve_fleuris_de_si_ra.mid"
-                          sound-font visualizer="#myVisualizer">
-                        </midi-player>
-                        <midi-visualizer type="staff" id="myVisualizer"></midi-visualizer>
-                        <midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div type="button btn-light" class="list-group-item btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Réve Fleuris de Si'ra <span class="label label-default">Piano</span>
             </div>
         </ul>
 
 
+        <!-- Music Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Réve Fleuris de Si'ra</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <midi-player
+                  src="https://pharnisch.github.io/assets/midi/reve_fleuris_de_si_ra.mid"
+                  sound-font visualizer="#myVisualizer">
+                </midi-player>
+                <!--<midi-visualizer type="staff" id="myVisualizer"></midi-visualizer>-->
+                <midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
+              </div>
+            </div>
+          </div>
+        </div>
 
+
+
+
+        <!--
         <div class="media">
           <img class="mr-3" src="..." alt="Generic placeholder image">
           <div class="media-body">
@@ -62,7 +56,7 @@
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
         </div>
-
+        -->
 
 
     </div>
